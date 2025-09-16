@@ -93,7 +93,6 @@ class ActivityController extends Controller
                 $technicians = $response->json();
                 $types = $response->json();
                 return view('activity.edit', compact('activity', 'technicians', 'types'));
-
             }
         }
         elseif($response->status() == Response::HTTP_BAD_REQUEST)
